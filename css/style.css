@@ -18,7 +18,7 @@
 }
 
 .hero-main-container {
-  margin: 32rem 0;
+  margin: 32rem 0 0 0;
   padding: 3.2rem 2.4rem 0 2.4rem;
   background-color: #e2e2e2;
 }
@@ -66,9 +66,35 @@
 
 .btn-white {
   background: #fff;
+  color: #000;
 }
 
 .btn-green {
   background: #6fb85e;
-  color: #000;
+  color: #fff;
+}
+
+/******** About Us Section *************/
+
+.aboutus-section {
+  margin: 0 2.4rem;
+}
+
+.aboutus-headline-container {
+  display: flex;
+  width: 11.2rem;
+  height: 4.2rem;
+  padding: 1.2rem 1.6rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  border-radius: 2.4rem;
+  background: #2b4d8a;
+}
+
+.aboutus-headline {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
