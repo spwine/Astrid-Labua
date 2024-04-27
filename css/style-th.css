@@ -4,6 +4,11 @@
   text-decoration: none;
 }
 
+.hero-main-container,
+.aboutus-section {
+  background-color: #e2e2e2;
+}
+
 /******** Hero Section *************/
 .hero-bg-container {
   width: 100%;
@@ -26,7 +31,6 @@
 .hero-main-container {
   margin: 32rem 0 0 0;
   padding: 3.2rem 2.4rem 0 2.4rem;
-  background-color: #e2e2e2;
 }
 
 .hero-txt-container {
@@ -83,11 +87,12 @@
 /******** About Us Section *************/
 
 .aboutus-section {
-  margin: 0 2.4rem;
+  padding: 0 2.4rem;
 }
 
 .aboutus-first-section {
   padding: 3.2rem 1.6rem;
+  margin-bottom: 1.2rem;
 
   border-radius: 8px;
   background: rgba(242, 242, 242, 0.69);
@@ -149,4 +154,43 @@
 .about-txt-btn {
   font-size: 1.2rem;
   padding-right: 0.8rem;
+}
+
+.img-about-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  grid-template-rows: 24rem 12.8rem;
+
+  margin-bottom: 1.6rem;
+}
+
+.img-about-container {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0.8rem;
+}
+
+.img-about {
+  object-fit: cover;
+  border-radius: 0.8rem;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.img-about-first {
+  height: 120%;
+  width: 150%;
+  bottom: 4.8rem;
+  left: -5.6rem;
+}
+
+.img-about-last,
+.img-about-second {
+  height: 100%;
+  width: 100%;
+}
+
+.img-about-container-last {
+  grid-column: 1/-1;
 }
