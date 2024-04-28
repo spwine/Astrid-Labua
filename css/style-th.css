@@ -1,3 +1,12 @@
+p {
+  color: #0d0d0d;
+  font-family: "Sukhumvit Set";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+}
+
 .btn,
 .btn p {
   font-family: "Sukhumvit Set";
@@ -5,8 +14,28 @@
 }
 
 .hero-main-container,
-.aboutus-section {
+.aboutus-section,
+.products-section {
   background-color: #e2e2e2;
+}
+
+.headline-container {
+  display: flex;
+  padding: 1.2rem 1.6rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  border-radius: 2.4rem;
+  background: #fff;
+
+  margin-bottom: 1.6rem;
+}
+
+.headline {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 /******** Hero Section *************/
@@ -44,6 +73,13 @@
 }
 
 .hero-txt {
+  color: #0d0d0d;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 24px; /* 150% */
+
   max-width: 30.6rem;
   text-align: center;
   margin: 0 auto;
@@ -87,7 +123,7 @@
 /******** About Us Section *************/
 
 .aboutus-section {
-  padding: 0 2.4rem;
+  padding: 0 2.4rem 5.6rem 2.4rem;
 }
 
 .aboutus-first-section {
@@ -100,24 +136,8 @@
 }
 
 .aboutus-headline-container {
-  display: flex;
   width: 11.2rem;
   height: 4.2rem;
-  padding: 1.2rem 1.6rem;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-
-  border-radius: 2.4rem;
-  background: #fff;
-
-  margin-bottom: 1.6rem;
-}
-
-.aboutus-headline {
-  color: #000;
-  text-transform: uppercase;
-  font-size: 1.2rem;
 }
 
 .aboutus-tagline-container {
@@ -138,12 +158,11 @@
   padding-bottom: 0.8rem;
 }
 
-.aboutus-first-txt {
+.aboutus-first-txt,
+.aboutus-second-txt {
   color: #000;
-  font-family: "Sukhumvit Set";
   font-size: 1.4rem;
   font-style: normal;
-  line-height: 25px; /* 178.571% */
 }
 
 .btn-about {
@@ -193,4 +212,108 @@
 
 .img-about-container-last {
   grid-column: 1/-1;
+}
+
+.aboutus-second-txt-container {
+  padding-bottom: 1.6rem;
+}
+
+.aboutus-second-txt {
+  font-size: 1.6rem;
+}
+
+.about-lists-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.about-list-container {
+  border-radius: 8px;
+  background: #f2f2f2;
+
+  display: grid;
+  grid-template-columns: 5.6rem 1fr;
+  column-gap: 2rem;
+
+  height: 10rem;
+  padding: 3.2rem 3.6rem;
+  /* justify-content: center;
+  align-items: center;
+  flex-shrink: 0; */
+}
+
+.contact-list-icon {
+  height: 4rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.contact-list-txt {
+  align-self: center;
+}
+
+/******** Our Products Section *************/
+
+.products-section {
+  padding: 0 2.4rem 5.6rem 2.4rem;
+}
+
+.products-headline-container {
+  width: 13.6rem;
+  height: 4.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.products-category-container {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 1.6rem;
+}
+
+.each-products-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 2.4rem 0;
+
+  display: grid;
+  grid-template-columns: 11.2rem 1fr;
+  column-gap: 3.2rem;
+}
+
+.product-img-container {
+  height: 11.2rem;
+  width: 11.2rem;
+  border-radius: 0.8rem;
+}
+
+.product-img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.product-txt-container {
+  align-self: center;
+}
+
+.product-txt-en {
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.4rem; /* 120% */
+}
+
+.product-txt-th {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.our-products-btn {
+  width: 100%;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.5);
 }
