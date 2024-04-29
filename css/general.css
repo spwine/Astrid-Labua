@@ -8,12 +8,21 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   background-color: #e2e2e2;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   position: relative;
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: auto;
 }
 
 h1 {
@@ -34,4 +43,97 @@ h3 {
   font-weight: 300;
   line-height: 36.47px; /* 113.969% */
   letter-spacing: -1px;
+}
+
+/******* Footer *******/
+footer {
+  padding-top: 8.8rem;
+  background-color: #fff;
+}
+
+.footer-top-container,
+.footer-bottom-container {
+  padding: 0 2.4rem;
+}
+
+.footer-top-container {
+  margin-bottom: 3.2rem;
+}
+
+.footer-bottom-container {
+  padding-bottom: 4rem;
+}
+
+.logo-footer-container {
+  height: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.logo-footer {
+  height: 100%;
+}
+
+.footer-txt-container {
+  max-width: 32.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.footer-txt,
+.contact-detail-container p,
+.contact-detail-container a,
+.index-footer,
+.copyright {
+  font-family: "Manrope", sans-serif;
+}
+
+.social-media-container {
+  display: flex;
+  gap: 4.8rem;
+  margin-bottom: 2.8rem;
+}
+
+.social-media-icon-container {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.social-media-icon {
+  height: 100%;
+}
+
+.contact-footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.contact-header {
+  font-size: 1.4rem;
+}
+
+.contact-detail,
+.index-footer {
+  color: #757575;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.index-footer-container-first {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.index-footer-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 2rem 0;
+}
+
+.copyright-container {
+  padding: 2rem 0;
+  background: #e2e2e2;
+  text-align: center;
+}
+
+.copyright {
+  color: #808080;
+  font-size: 1.2rem;
 }
