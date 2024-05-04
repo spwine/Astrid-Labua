@@ -1,84 +1,59 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const carousel = document.querySelector(".carousel");
-  const inner = carousel.querySelector(".carousel-inner");
-  const items = carousel.querySelectorAll(".carousel-item");
-  const prevBtn = carousel.querySelector(".prev");
-  const nextBtn = carousel.querySelector(".next");
-  const indicators = carousel.querySelector(".carousel-indicators");
+const carousel = document.querySelector(".carousel");
+const carouselItems = document.querySelectorAll(".carousel-item");
+const indicatorsContainer = document.querySelector(".carousel-indicators");
 
-  let currentIndex = 0;
-  let startX = 0;
-  let swipeThreshold = carousel.offsetWidth / 4; // Adjust this value as needed
+let currentIndex = 0;
+let touchStartX = 0;
+let touchMoveX = 0;
 
-  // Create indicators
-  items.forEach((item, index) => {
-    const indicator = document.createElement("span");
-    indicator.classList.add("indicator");
+// Update carousel indicators
+function updateIndicators() {
+  indicatorsContainer.innerHTML = "";
+  carouselItems.forEach((item, index) => {
+    const indicator = document.createElement("div");
+    indicator.classList.add("carousel-indicator");
+    if (index === currentIndex) {
+      indicator.classList.add("active");
+    }
     indicator.addEventListener("click", () => {
       goTo(index);
     });
-    indicators.appendChild(indicator);
+    indicatorsContainer.appendChild(indicator);
   });
+}
 
-  const indicatorsArray = Array.from(indicators.children);
+// Update carousel position
+function updateCarousel() {
+  const itemWidth = carouselItems[0].offsetWidth;
+  const offset = -currentIndex * itemWidth;
+  carousel.style.transform = `translateX(${offset}px)`;
+}
 
-  // Initialize active indicator
-  indicatorsArray[currentIndex].classList.add("active");
+// Go to specific index
+function goTo(index) {
+  currentIndex = index;
+  updateCarousel();
+  updateIndicators();
+}
 
-  function goTo(index) {
-    if (index === currentIndex) return;
-    currentIndex = index;
-    updateCarouselPosition();
-    updateIndicators();
-  }
-
-  function updateCarouselPosition() {
-    const currentItem = items[currentIndex];
-    const offset =
-      currentItem.offsetLeft -
-      (carousel.offsetWidth - currentItem.offsetWidth) / 2;
-    inner.style.transform = `translateX(-${offset}px)`;
-  }
-
-  function updateIndicators() {
-    indicatorsArray.forEach((indicator, index) => {
-      if (index === currentIndex) {
-        indicator.classList.add("active");
-      } else {
-        indicator.classList.remove("active");
-      }
-    });
-  }
-
-  prevBtn.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      goTo(currentIndex - 1);
-    }
-  });
-
-  nextBtn.addEventListener("click", () => {
-    if (currentIndex < items.length - 1) {
-      goTo(currentIndex + 1);
-    }
-  });
-
-  // Touch swipe functionality
-  carousel.addEventListener("touchstart", (event) => {
-    startX = event.touches[0].clientX;
-  });
-
-  carousel.addEventListener("touchmove", (event) => {
-    event.preventDefault();
-    const moveX = event.touches[0].clientX;
-    const diffX = moveX - startX;
-
-    if (diffX > swipeThreshold && currentIndex > 0) {
-      goTo(currentIndex - 1);
-    } else if (diffX < -swipeThreshold && currentIndex < items.length - 1) {
-      goTo(currentIndex + 1);
-    }
-  });
-
-  // Initialize carousel position
-  updateCarouselPosition();
+// Touch event handlers
+carousel.addEventListener("touchstart", (event) => {
+  touchStartX = event.touches[0].clientX;
 });
+
+carousel.addEventListener("touchmove", (event) => {
+  touchMoveX = event.touches[0].clientX;
+});
+
+carousel.addEventListener("touchend", () => {
+  const diff = touchStartX - touchMoveX;
+  if (diff > 50 && currentIndex < carouselItems.length - 1) {
+    goTo(currentIndex + 1);
+  } else if (diff < -50 && currentIndex > 0) {
+    goTo(currentIndex - 1);
+  }
+});
+
+// Initialize carousel
+updateIndicators();
+updateCarousel();
