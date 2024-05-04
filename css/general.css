@@ -45,6 +45,56 @@ h3 {
   letter-spacing: -1px;
 }
 
+/******* Header *******/
+header {
+  width: 100%;
+  height: 20vw;
+  padding: 0;
+  z-index: 9999;
+
+  position: fixed;
+  top: 0;
+}
+
+.container-nav {
+  margin: 0.8rem;
+  padding: 0 1.6rem;
+  border-radius: 0.8rem;
+
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 5.6rem;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: #fffffff2;
+}
+
+.header-logo {
+  height: 2rem;
+}
+
+.header-logo img {
+  height: 100%;
+}
+
+.trigger {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 2.8rem;
+  height: 1.6rem;
+}
+
+.trigger span {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  background-color: #000;
+}
+
 /******* Footer *******/
 footer {
   padding-top: 8.8rem;
