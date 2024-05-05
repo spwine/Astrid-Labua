@@ -31,3 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
   var currentYear = new Date().getFullYear();
   yearSpan.textContent = currentYear;
 });
+
+// Nav bar
+document.addEventListener("DOMContentLoaded", function () {
+  const triggerButton = document.querySelector(".trigger");
+  const containerNav = document.querySelector(".container-nav");
+  const nav = document.querySelector("nav");
+
+  triggerButton.addEventListener("click", function () {
+    this.classList.toggle("active");
+    containerNav.classList.toggle("nav-active");
+    nav.classList.toggle("nav-menu-active");
+  });
+});

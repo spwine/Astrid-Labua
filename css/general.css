@@ -68,6 +68,23 @@ header {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   background-color: #fffffff2;
+  transition: all 0.8s;
+}
+
+.container-nav.nav-active {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  border-radius: 0;
+  padding: 2.4rem 1.6rem 5.6rem 4rem;
+}
+
+.container-nav.nav-active .header-logo {
+  align-self: flex-end;
+  height: 3.2rem;
+}
+.container-nav.nav-active button {
+  align-self: flex-start;
 }
 
 .header-logo {
@@ -82,17 +99,111 @@ header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 2.8rem;
-  height: 1.6rem;
+  justify-content: center;
+  gap: 0.8rem;
+  align-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
 }
 
 .trigger span {
   position: relative;
-  width: 100%;
+  width: 2.8rem;
   height: 2px;
   display: flex;
   background-color: #000;
+  transition: transform 0.8s, opacity 0.8s;
+}
+
+.trigger span:first-child {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  top: -1px;
+}
+
+.trigger span:nth-child(2) {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+.trigger span:last-child {
+  opacity: 1;
+  transform: translate(0px, -0px);
+  bottom: -1px;
+}
+
+.trigger.active {
+  background-color: #2b4d8a;
+}
+
+.trigger.active span {
+  background-color: #fff;
+}
+
+.trigger.active span:first-child {
+  transform: translate(0px, 2.5vw) rotate(45deg);
+}
+
+.trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.trigger.active span:last-child {
+  transform: translate(0px, -2.5vw) rotate(-45deg);
+}
+
+nav {
+  position: absolute;
+  left: 4rem;
+  top: 8rem;
+
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.8s;
+}
+
+nav.nav-menu-active {
+  display: unset;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.nav-lists li {
+  list-style: none;
+}
+
+.nav-lists li a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.nav-lists li a span:first-child {
+  color: #000;
+  font-family: "Cormorant", serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav-lists li a span:last-child {
+  color: #000;
+  font-family: "Sukhumvit Set";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2rem; /* 163% */
 }
 
 /******* Footer *******/
