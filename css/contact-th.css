@@ -1,0 +1,72 @@
+p {
+  color: #000;
+  font-family: "Sukhumvit Set";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.8rem; /* 175% */
+}
+
+.contact-page-header {
+  margin-top: 11.2rem;
+  margin-bottom: 2rem;
+  font-size: 4.8rem;
+  letter-spacing: -2px;
+  line-height: 48px; /* 100% */
+  letter-spacing: -2px;
+  text-transform: capitalize;
+}
+
+.main-content {
+  padding: 0 2.4rem;
+}
+
+.contact-txt-container {
+  margin-bottom: 4rem;
+}
+
+label {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22.4px; /* 186.667% */
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.706);
+  background-color: transparent;
+  /* border-radius: 5px; */
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  /* left: 10px; */
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #999;
+  transition: 0.3s ease-out;
+}
+
+.input-container label.active {
+  top: -8px;
+  font-size: 12px;
+  color: #333;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 12px;
+  color: #333;
+}
