@@ -214,6 +214,33 @@ nav.nav-menu-active {
   line-height: 2rem; /* 163% */
 }
 
+/******* Bread *******/
+
+.bread-container {
+  margin-top: 10rem;
+  margin-left: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  height: 1.6rem;
+}
+
+.home-icon {
+  height: 100%;
+}
+
+.bread-txt {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+  text-decoration: none;
+}
+
+.bread-current {
+  color: #6fb85e;
+}
 /******* Footer *******/
 footer {
   padding-top: 8.8rem;
@@ -243,7 +270,7 @@ footer {
 }
 
 .footer-txt-container {
-  max-width: 32.8rem;
+  max-width: 34rem;
   margin-bottom: 4.8rem;
 }
 
