@@ -145,6 +145,7 @@ p {
   border-radius: 8px;
   background: rgba(242, 242, 242, 0.69);
   backdrop-filter: blur(5.65px);
+  -webkit-backdrop-filter: blur(5.65px);
 }
 
 .aboutus-headline-container {
