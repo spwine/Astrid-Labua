@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/about-th.css" />
+    <link rel="stylesheet" href="../css/queries/general-queries.css" />
+    <link rel="stylesheet" href="../css/queries/about-th-queries.css" />
 
     <title>Astrid Labua</title>
   </head>
@@ -36,7 +38,9 @@
         <nav>
           <ul class="nav-lists">
             <li>
-              <a href="index.html"><span>Home</span><span>หน้าหลัก</span></a>
+              <a href="index.html"
+                ><span class="page-active">Home</span><span>หน้าหลัก</span></a
+              >
             </li>
             <li>
               <a href="about-us.html"
@@ -59,7 +63,16 @@
               >
             </li>
           </ul>
+          <div class="lan-container">
+            <span class="lan-header">Language</span>
+            <span class="lan">TH</span>
+            <a href="/index.html" class="lan">EN</a>
+          </div>
         </nav>
+        <div class="lan-container-desktop">
+          <span class="lan">TH</span>
+          <a href="/index.html" class="lan">EN</a>
+        </div>
       </div>
     </header>
     <div class="about-bg-container">
@@ -73,20 +86,27 @@
       <h1 class="about-header">Our Story</h1>
     </div>
     <div class="about-content-container">
-      <h2 class="top-header">
-        Innovating Partnerships: Our Story as Brand Allies
-      </h2>
-      <p class="first-para">
-        <strong>บริษัท แอสทริด ลาบัว จำกัด</strong>
-        เป็นโรงงานรับผลิตครีมสร้างแบรนด์ สกินแคร์
-        และเครื่องสำอางทุกชนิดที่มีคุณภาพตอบสนองความต้องการ ของลูกค้า
-        โดยคำนึงถึงคุณภาพของผลิตภัณฑ์ที่นำออกจำหน่าย
-        คัดสรรวัตถุดิบที่มีคุณภาพจากผู้ผลิตชั้นนำในประเทศต่างๆ ทั่วโลก
-        มีกระบวนการคิดค้นวิจัย และสร้างสรรค์สูตรผลิตภัณฑ์ใหม่ ๆ
-        จากผู้เชี่ยวชาญด้านเครื่องสำอางโดยตรง มีความพิถีพิถันในทุกขั้นตอน
-        ตั้งแต่การรับความต้องการของลูกค้า จนถึงกระบวนการผลิตเพื่อให้ได้มา
-        ซึ่งสินค้าที่มีคุณภาพมาตรฐานปลอดภัยต่อผู้บริโภค
-      </p>
+      <div class="top-txt-container">
+        <h2 class="top-header">
+          Innovating Partnerships: Our Story as Brand Allies
+        </h2>
+        <div class="top-header-desktop">
+          <span>Innovating Partnerships:</span>
+          <span>Our Story as</span>
+          <span>Brand Allies</span>
+        </div>
+        <p class="first-para">
+          <strong>บริษัท แอสทริด ลาบัว จำกัด</strong>
+          เป็นโรงงานรับผลิตครีมสร้างแบรนด์ สกินแคร์
+          และเครื่องสำอางทุกชนิดที่มีคุณภาพตอบสนองความต้องการ ของลูกค้า
+          โดยคำนึงถึงคุณภาพของผลิตภัณฑ์ที่นำออกจำหน่าย
+          คัดสรรวัตถุดิบที่มีคุณภาพจากผู้ผลิตชั้นนำในประเทศต่างๆ ทั่วโลก
+          มีกระบวนการคิดค้นวิจัย และสร้างสรรค์สูตรผลิตภัณฑ์ใหม่ ๆ
+          จากผู้เชี่ยวชาญด้านเครื่องสำอางโดยตรง มีความพิถีพิถันในทุกขั้นตอน
+          ตั้งแต่การรับความต้องการของลูกค้า จนถึงกระบวนการผลิตเพื่อให้ได้มา
+          ซึ่งสินค้าที่มีคุณภาพมาตรฐานปลอดภัยต่อผู้บริโภค
+        </p>
+      </div>
       <div class="main-content">
         <div class="para-img-container">
           <div class="img-container">
@@ -143,91 +163,95 @@
           </div>
         </div>
       </div>
-      <div class="cert-container">
-        <img
-          class="certificate"
-          src="https://ik.imagekit.io/samhee/Astrid%20Labua/About%20Us/1.jpeg?updatedAt=1714933610310"
-          alt="certificate1"
-        />
-      </div>
-      <div class="cert-container">
-        <img
-          class="certificate"
-          src="https://ik.imagekit.io/samhee/Astrid%20Labua/About%20Us/2.jpeg?updatedAt=1714933611390"
-          alt="certificate2"
-        />
+      <div class="cert-container-outer">
+        <div class="cert-container">
+          <img
+            class="certificate"
+            src="https://ik.imagekit.io/samhee/Astrid%20Labua/About%20Us/1.jpeg?updatedAt=1714933610310"
+            alt="certificate1"
+          />
+        </div>
+        <div class="cert-container">
+          <img
+            class="certificate"
+            src="https://ik.imagekit.io/samhee/Astrid%20Labua/About%20Us/2.jpeg?updatedAt=1714933611390"
+            alt="certificate2"
+          />
+        </div>
       </div>
     </div>
     <footer>
-      <div class="footer-top-container">
-        <div class="logo-footer-container">
-          <img
-            class="logo-footer"
-            src="https://ik.imagekit.io/samhee/Astrid%20Labua/Logo%202%20(1)%202.jpg?updatedAt=1714403506156"
-            alt="Astrid Labua Logo"
-          />
-        </div>
-        <div class="footer-txt-container">
-          <p class="footer-txt">
-            Astrid Labua provides every client with high-quality, innovative,
-            and effective cosmetic product solutions that not just exceeds
-            expectations but also meets specific needs.
-          </p>
-        </div>
-        <div class="social-media-container">
-          <a href="#" class="social-media-icon-container">
+      <div class="footer-container">
+        <div class="footer-top-container">
+          <div class="logo-footer-container">
             <img
-              src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Link.png?updatedAt=1714403815236"
-              class="social-media-icon"
-              alt="line icon"
+              class="logo-footer"
+              src="https://ik.imagekit.io/samhee/Astrid%20Labua/Logo%202%20(1)%202.jpg?updatedAt=1714403506156"
+              alt="Astrid Labua Logo"
             />
-          </a>
-          <a href="#" class="social-media-icon-container">
-            <img
-              src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Link-1.png?updatedAt=1714403815152"
-              class="social-media-icon"
-              alt="ig icon"
-            />
-          </a>
-          <a href="#" class="social-media-icon-container">
-            <img
-              src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Link-2.png?updatedAt=1714403815255"
-              class="social-media-icon"
-              alt="facebook icon"
-            />
-          </a>
+          </div>
+          <div class="footer-txt-container">
+            <p class="footer-txt">
+              Astrid Labua provides every client with high-quality, innovative,
+              and effective cosmetic product solutions that not just exceeds
+              expectations but also meets specific needs.
+            </p>
+          </div>
+          <div class="social-media-container">
+            <a href="#" class="social-media-icon-container">
+              <img
+                src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Link.png?updatedAt=1714403815236"
+                class="social-media-icon"
+                alt="line icon"
+              />
+            </a>
+            <a href="#" class="social-media-icon-container">
+              <img
+                src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Link-1.png?updatedAt=1714403815152"
+                class="social-media-icon"
+                alt="ig icon"
+              />
+            </a>
+            <a href="#" class="social-media-icon-container">
+              <img
+                src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Link-2.png?updatedAt=1714403815255"
+                class="social-media-icon"
+                alt="facebook icon"
+              />
+            </a>
+          </div>
+
+          <div class="contact-footer-container">
+            <div class="contact-detail-container">
+              <p class="contact-header">Email</p>
+              <a
+                href="mailto:customerservice@astridlabua.com"
+                class="contact-detail"
+                >customerservice@astridlabua.com</a
+              >
+            </div>
+            <div class="contact-detail-container">
+              <p class="contact-header">Phone</p>
+              <a href="tel:+66980589055" class="contact-detail"
+                >(+66)98-058-9055</a
+              >
+            </div>
+          </div>
         </div>
 
-        <div class="contact-footer-container">
-          <div class="contact-detail-container">
-            <p class="contact-header">Email</p>
-            <a
-              href="mailto:customerservice@astridlabua.com"
-              class="contact-detail"
-              >customerservice@astridlabua.com</a
-            >
+        <div class="footer-bottom-container">
+          <div class="index-footer-container index-footer-container-first">
+            <a href="about-us.html" class="index-footer">About Us</a>
           </div>
-          <div class="contact-detail-container">
-            <p class="contact-header">Phone</p>
-            <a href="tel:+66980589055" class="contact-detail"
-              >(+66)98-058-9055</a
-            >
+          <div class="index-footer-container">
+            <a href="products.html" class="index-footer">Products</a>
           </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom-container">
-        <div class="index-footer-container index-footer-container-first">
-          <a href="about-us.html" class="index-footer">About Us</a>
-        </div>
-        <div class="index-footer-container">
-          <a href="products.html" class="index-footer">Products</a>
-        </div>
-        <div class="index-footer-container">
-          <a href="news&updates.html" class="index-footer">News & Updates</a>
-        </div>
-        <div class="index-footer-container">
-          <a href="contactus.html" class="index-footer">Contact Us</a>
+          <div class="index-footer-container">
+            <a href="news&updates.html" class="index-footer">News & Updates</a>
+          </div>
+          <div class="index-footer-container">
+            <a href="contactus.html" class="index-footer">Contact Us</a>
+          </div>
         </div>
       </div>
       <div class="copyright-container">

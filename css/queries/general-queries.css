@@ -97,3 +97,9 @@
     padding-top: 5.6rem;
   }
 }
+
+@media (min-width: 90em) {
+  h1 {
+    font-size: 9.6rem;
+  }
+}

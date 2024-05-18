@@ -1,0 +1,71 @@
+@media (min-width: 64em) {
+  .about-bg {
+    width: 100%;
+    height: unset;
+    top: -40rem;
+  }
+
+  .about-header-container {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .about-content-container {
+    padding: 8rem 4.8rem;
+    max-width: 144rem;
+    margin: 53.6rem auto 0 auto;
+  }
+
+  .top-txt-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 5.6rem;
+  }
+
+  .top-header {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .top-header-desktop {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .top-header-desktop span {
+    color: #000;
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+  }
+  .top-header-desktop span:first-child {
+    font-size: 4rem;
+  }
+
+  .top-header-desktop span:nth-child(2),
+  .top-header-desktop span:last-child {
+    font-size: 6.4rem;
+  }
+
+  .first-para {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    max-width: 46.4rem;
+  }
+
+  .para-img-container,
+  .cert-container-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.4rem;
+  }
+
+  .txt-container {
+    align-self: end;
+  }
+}

@@ -18,7 +18,7 @@
 
   .hero-bg-main-container {
     background-color: #e2e2e2;
-    margin: 94rem 0 0 0;
+    margin: 32rem 0 0 0;
   }
 
   .hero-main-img-container {
@@ -79,6 +79,10 @@
     margin-top: 3.2rem;
   }
 
+  .about-txt-btn {
+    font-size: 2rem;
+  }
+
   .img-about-div {
     grid-template-rows: 1fr 0.5fr;
     margin-bottom: 0;
@@ -133,7 +137,7 @@
   }
 
   .our-products-btn-desktop {
-    display: block;
+    display: inline-flex;
     opacity: 1;
     visibility: visible;
 
@@ -186,7 +190,7 @@
   }
 
   .news-all-btn-desktop {
-    display: block;
+    display: inline-flex;
     opacity: 1;
     visibility: visible;
 
@@ -228,5 +232,52 @@
 
   .news-topic {
     height: 10.8rem;
+  }
+}
+
+@media (min-width: 90em) {
+  .btn-border,
+  .btn-fill {
+    width: 16rem;
+    height: 5.6rem;
+    font-size: 2rem;
+  }
+
+  .hero-txt-container {
+    padding-bottom: 4.8rem;
+  }
+
+  .hero-header {
+    line-height: 8rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .hero-txt {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    max-width: 56rem;
+  }
+
+  .aboutus-tagline-container span {
+    font-size: 8rem;
+    height: 7.2rem;
+  }
+
+  .aboutus-tagline-container {
+    padding-bottom: 4rem;
+  }
+
+  .aboutus-first-txt {
+    font-size: 2rem;
+    max-width: 68rem;
+    line-height: 3.2rem;
+  }
+
+  .aboutus-second-txt-container {
+    max-width: 120rem;
+  }
+  .aboutus-second-txt {
+    font-size: 2rem;
+    line-height: 3.2rem;
   }
 }

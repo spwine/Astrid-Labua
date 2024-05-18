@@ -54,6 +54,12 @@ p {
   margin: 0 auto;
 }
 
+.top-header-desktop {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
 .first-para {
   /* margin: 0 auto; */
   font-size: 1.2rem;

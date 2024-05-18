@@ -96,7 +96,7 @@ p {
 
 .btn-border,
 .btn-fill {
-  display: flex;
+  display: inline-flex;
   width: 112px;
   height: 40px;
   padding: 14px 24px;
