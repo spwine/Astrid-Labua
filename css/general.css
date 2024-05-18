@@ -220,15 +220,24 @@ nav.nav-menu-active {
   margin-top: 6.4rem;
   display: flex;
   flex-direction: column;
+  gap: 0.4rem;
 }
 
 .lan-container span,
 .lan-container a {
   font-family: "Manrope", sans-serif;
   font-style: normal;
+  color: #000;
 }
 
 .lan-header {
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.lan {
+  font-size: 1.2rem;
 }
 
 /******* Bread *******/
