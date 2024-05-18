@@ -28,10 +28,15 @@
 
     align-self: center;
     position: unset;
+    gap: 13.6rem;
   }
   .nav-lists {
     flex-direction: row;
     gap: 2rem;
+  }
+
+  .page-active {
+    border-bottom: 1px solid #000;
   }
 
   .nav-lists li a span:first-child {
@@ -42,5 +47,36 @@
     display: none;
     opacity: 0;
     visibility: hidden;
+  }
+
+  .lan-container {
+    flex-direction: row;
+    margin-top: 0;
+    align-self: center;
+    gap: 0.8rem;
+  }
+
+  .lan-header {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  /******* Footer *******/
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .footer-top-container {
+    padding-left: 4.8rem;
+    margin-bottom: 15.2rem;
+  }
+
+  .footer-bottom-container {
+    padding-right: 4.8rem;
+    padding-top: 5.6rem;
   }
 }
