@@ -1,4 +1,15 @@
 @media (min-width: 64em) {
+  .container-bg-content {
+    width: 100%;
+    background-color: #e2e2e2;
+  }
+
+  .aboutus-section,
+  .products-section,
+  .news-updates-section {
+    max-width: 144rem;
+    margin: 0 auto;
+  }
   /******** Hero Section *************/
   .hero-main-container {
     margin: 0;

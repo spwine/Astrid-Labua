@@ -54,6 +54,10 @@
     margin-top: 0;
     align-self: center;
     gap: 0.8rem;
+
+    display: none;
+    visibility: hidden;
+    opacity: 0;
   }
 
   .lan-header {
@@ -62,12 +66,25 @@
     opacity: 0;
   }
 
+  .lan-container-desktop {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+
+    flex-direction: row;
+    margin-top: 0;
+    align-self: center;
+    gap: 0.8rem;
+  }
+
   /******* Footer *******/
 
   .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
+    max-width: 144rem;
+    margin: 0 auto;
   }
 
   .footer-top-container {

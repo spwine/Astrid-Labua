@@ -224,7 +224,9 @@ nav.nav-menu-active {
 }
 
 .lan-container span,
-.lan-container a {
+.lan-container a,
+.lan-container-desktop span,
+.lan-container-desktop a {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   color: #000;
@@ -238,6 +240,12 @@ nav.nav-menu-active {
 
 .lan {
   font-size: 1.2rem;
+}
+
+.lan-container-desktop {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 /******* Bread *******/
