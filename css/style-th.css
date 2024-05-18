@@ -332,6 +332,12 @@ p {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.our-products-btn-desktop {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
 /******** News&Updates Section *************/
 
 .news-updates-section {
@@ -340,6 +346,12 @@ p {
 
 .news-updates-heading-container {
   margin-bottom: 1.2rem;
+}
+
+.news-all-btn-desktop {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .news-updates-heading {

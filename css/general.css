@@ -216,6 +216,21 @@ nav.nav-menu-active {
   line-height: 2rem; /* 163% */
 }
 
+.lan-container {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.lan-container span,
+.lan-container a {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+}
+
+.lan-header {
+}
+
 /******* Bread *******/
 
 .bread-container {

@@ -1,0 +1,220 @@
+@media (min-width: 64em) {
+  /******** Hero Section *************/
+  .hero-main-container {
+    margin: 0;
+    align-self: center;
+  }
+
+  .hero-bg-main-container {
+    background-color: #e2e2e2;
+    margin: 94rem 0 0 0;
+  }
+
+  .hero-main-img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 102.4rem;
+    margin: 0 auto;
+  }
+
+  .img-landing-container {
+    position: relative;
+  }
+
+  .hero-header {
+    line-height: 5.6rem;
+  }
+
+  .hero-txt {
+    font-size: 2.4rem;
+    line-height: 32px;
+    max-width: 40rem;
+  }
+
+  /******** About Us Section *************/
+
+  .aboutus-section {
+    padding: 4.8rem 4.8rem 8.8rem 4.8rem;
+  }
+
+  .first-img-about-container {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    column-gap: 2.8rem;
+
+    margin-bottom: 4.8rem;
+  }
+
+  .aboutus-first-section {
+    padding: 3.2rem 2.4rem;
+  }
+
+  .aboutus-tagline-container {
+    padding-bottom: 2.4rem;
+  }
+
+  .aboutus-tagline-container span {
+    font-size: 6.4rem;
+    padding-bottom: 0;
+    height: 6rem;
+  }
+
+  .aboutus-first-txt {
+    font-size: 1.6rem;
+    max-width: 48rem;
+  }
+
+  .btn-about {
+    margin-top: 3.2rem;
+  }
+
+  .img-about-div {
+    grid-template-rows: 1fr 0.5fr;
+    margin-bottom: 0;
+    height: 43.4rem;
+  }
+  .aboutus-second-txt-container,
+  .about-lists-container {
+    padding-left: 3.2rem;
+  }
+
+  .aboutus-second-txt-container {
+    max-width: 62rem;
+    padding-bottom: 5.6rem;
+  }
+
+  .about-lists-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 7.2rem;
+    row-gap: 2.8rem;
+  }
+
+  .about-list-container {
+    padding: 2rem 2.8rem;
+  }
+
+  .contact-list-icon {
+    height: 6.4rem;
+  }
+
+  .contact-list-txt {
+    font-size: 2rem;
+  }
+
+  .experience-icon {
+    height: 5.2rem;
+  }
+
+  /******** Our Products Section *************/
+
+  .products-section {
+    padding: 0 4.8rem 5.6rem 4.8rem;
+  }
+
+  .products-header-container-outer {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    margin-bottom: 4.8rem;
+  }
+
+  .our-products-btn-desktop {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+  }
+
+  .products-category-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 4.8rem;
+  }
+
+  .each-products-container {
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-img-container {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 0.8rem;
+  }
+
+  .product-txt-en,
+  .product-txt-th {
+    text-align: center;
+  }
+
+  .our-products-btn {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /******** News&Updates Section *************/
+
+  .news-updates-section {
+    padding: 0 4.8rem 12rem 4.8rem;
+  }
+
+  .news-updates-heading-container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    margin-bottom: 4.8rem;
+  }
+
+  .news-all-btn-desktop {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+  }
+
+  .carousel-container {
+    padding: 0;
+  }
+
+  .carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 1.2rem;
+  }
+
+  .carousel-item {
+    width: 30rem;
+    height: 37.6rem;
+    padding: 1rem;
+  }
+
+  .img-news-container {
+    width: 28rem;
+    height: 20rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .carousel-indicators,
+  .news-all-btn-container {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .news-topic {
+    height: 10.8rem;
+  }
+}
