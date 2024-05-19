@@ -144,8 +144,7 @@ p {
 .btn-border:hover::before {
   top: 0;
 }
-.btn-border:hover,
-.btn-border:visited {
+.btn-border:hover {
   color: #fff;
   border-color: #6fb85e;
 }
@@ -156,8 +155,7 @@ p {
   background: #f2f2f2;
 }
 
-.btn-fill:hover,
-.btn-fill:visited {
+.btn-fill:hover {
   color: #fff;
   background: #306da6;
 }
