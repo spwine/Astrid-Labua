@@ -1,4 +1,7 @@
 @media (min-width: 64em) {
+  .about-bg-container {
+    height: 100vh;
+  }
   .about-bg {
     display: none;
     opacity: 0;
@@ -11,6 +14,8 @@
     opacity: 1;
 
     width: 100%;
+    height: 100vh;
+    object-fit: cover;
   }
 
   .about-header-container {
@@ -27,7 +32,7 @@
   .about-content-container {
     padding: 8rem 4.8rem;
     max-width: 144rem;
-    margin: 53.6rem auto 0 auto;
+    margin: 0 auto;
   }
 
   .top-txt-container {
