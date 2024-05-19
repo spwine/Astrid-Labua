@@ -281,6 +281,10 @@
     line-height: 3.2rem;
   }
 
+  .img-about-div {
+    height: 49rem;
+  }
+
   .our-products-btn-desktop {
     width: fit-content;
   }

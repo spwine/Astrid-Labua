@@ -49,6 +49,102 @@
     visibility: hidden;
   }
 
+  .nav-lists a span:first-child::before {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Adjust this value based on your font size */
+    left: 0;
+    width: 0;
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: black; /* Change to your desired underline color */
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+
+  .nav-lists a span:first-child:hover::before {
+    width: 100%;
+  }
+
+  .nav-lists a span:first-child:hover::before {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+
+  .nav-lists a:hover span:first-child::before {
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-lists a span:first-child:hover::before {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+
+  /* Base styles for the navigation */
+  .nav-lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .nav-lists li {
+    margin-right: 20px;
+  }
+
+  .nav-lists a {
+    text-decoration: none;
+    position: relative;
+    color: black; /* Change to your desired text color */
+    display: inline-block;
+  }
+
+  .nav-lists a span {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px; /* To make room for the underline */
+  }
+
+  /* Underline effect on hover */
+  .nav-lists a span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px; /* Adjust the thickness of the underline */
+    background-color: black; /* Change to your desired underline color */
+    transition: width 0.3s ease;
+  }
+
+  .nav-lists a:hover span::before {
+    width: 100%;
+  }
+
+  .nav-lists a span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+
+  .nav-lists a:hover span::after {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+
+  /* Make effect inactive for .page-active */
+  .nav-lists a span.page-active::before,
+  .nav-lists a span.page-active::after {
+    display: none;
+  }
+
   .lan-container {
     flex-direction: row;
     margin-top: 0;
