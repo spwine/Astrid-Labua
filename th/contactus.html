@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/contact-th.css" />
+    <link rel="stylesheet" href="../css/queries/general-queries.css" />
+    <link rel="stylesheet" href="../css/queries/contactus-th-queries.css" />
 
     <title>Astrid Labua</title>
   </head>
@@ -55,21 +57,33 @@
             </li>
             <li>
               <a href="contactus.html"
-                ><span>Contact us</span><span>ช่องทางการติดต่อ</span></a
+                ><span class="page-active">Contact us</span
+                ><span>ช่องทางการติดต่อ</span></a
               >
             </li>
           </ul>
+          <div class="lan-container">
+            <span class="lan-header">Language</span>
+            <span class="lan">TH</span>
+            <a href="/index.html" class="lan">EN</a>
+          </div>
         </nav>
+        <div class="lan-container-desktop">
+          <span class="lan">TH</span>
+          <a href="/index.html" class="lan">EN</a>
+        </div>
       </div>
     </header>
     <div class="main-content">
-      <h2 class="contact-page-header">Ready to elevate your business?</h2>
-      <div class="contact-txt-container">
-        <p class="contact-txt">
-          หากคุณมีไอเดีย สามารถส่งคำถามเข้ามาสอบถาม
-          รายละเอียดเพิ่มเติมผ่านแบบฟอร์มข้างล่างนี้ได้เลย
-          ทางทีมงานจะติดต่อกลับโดยเร็วที่สุด
-        </p>
+      <div class="contact-txt-container-outer">
+        <h2 class="contact-page-header">Ready to elevate your business?</h2>
+        <div class="contact-txt-container">
+          <p class="contact-txt">
+            หากคุณมีไอเดีย สามารถส่งคำถามเข้ามาสอบถาม
+            รายละเอียดเพิ่มเติมผ่านแบบฟอร์มนี้ได้เลย
+            ทางทีมงานจะติดต่อกลับโดยเร็วที่สุด
+          </p>
+        </div>
       </div>
 
       <form action="submit.php" method="post">
@@ -108,75 +122,77 @@
       ></iframe>
     </div>
     <footer>
-      <div class="footer-top-container">
-        <div class="logo-footer-container">
-          <img
-            class="logo-footer"
-            src="https://ik.imagekit.io/samhee/Astrid%20Labua/Logo%202%20(1)%202.jpg?updatedAt=1714403506156"
-            alt="Astrid Labua Logo"
-          />
-        </div>
-        <div class="footer-txt-container">
-          <p class="footer-txt">
-            Astrid Labua provides every client with high-quality, innovative,
-            and effective cosmetic product solutions that not just exceeds
-            expectations but also meets specific needs.
-          </p>
-        </div>
-        <div class="social-media-container">
-          <a href="#" class="social-media-icon-container">
+      <div class="footer-container">
+        <div class="footer-top-container">
+          <div class="logo-footer-container">
             <img
-              src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Link.png?updatedAt=1714403815236"
-              class="social-media-icon"
-              alt="line icon"
+              class="logo-footer"
+              src="https://ik.imagekit.io/samhee/Astrid%20Labua/Logo%202%20(1)%202.jpg?updatedAt=1714403506156"
+              alt="Astrid Labua Logo"
             />
-          </a>
-          <a href="#" class="social-media-icon-container">
-            <img
-              src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Link-1.png?updatedAt=1714403815152"
-              class="social-media-icon"
-              alt="ig icon"
-            />
-          </a>
-          <a href="#" class="social-media-icon-container">
-            <img
-              src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Link-2.png?updatedAt=1714403815255"
-              class="social-media-icon"
-              alt="facebook icon"
-            />
-          </a>
+          </div>
+          <div class="footer-txt-container">
+            <p class="footer-txt">
+              Astrid Labua provides every client with high-quality, innovative,
+              and effective cosmetic product solutions that not just exceeds
+              expectations but also meets specific needs.
+            </p>
+          </div>
+          <div class="social-media-container">
+            <a href="#" class="social-media-icon-container">
+              <img
+                src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Link.png?updatedAt=1714403815236"
+                class="social-media-icon"
+                alt="line icon"
+              />
+            </a>
+            <a href="#" class="social-media-icon-container">
+              <img
+                src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Link-1.png?updatedAt=1714403815152"
+                class="social-media-icon"
+                alt="ig icon"
+              />
+            </a>
+            <a href="#" class="social-media-icon-container">
+              <img
+                src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Link-2.png?updatedAt=1714403815255"
+                class="social-media-icon"
+                alt="facebook icon"
+              />
+            </a>
+          </div>
+
+          <div class="contact-footer-container">
+            <div class="contact-detail-container">
+              <p class="contact-header">Email</p>
+              <a
+                href="mailto:customerservice@astridlabua.com"
+                class="contact-detail"
+                >customerservice@astridlabua.com</a
+              >
+            </div>
+            <div class="contact-detail-container">
+              <p class="contact-header">Phone</p>
+              <a href="tel:+66980589055" class="contact-detail"
+                >(+66)98-058-9055</a
+              >
+            </div>
+          </div>
         </div>
 
-        <div class="contact-footer-container">
-          <div class="contact-detail-container">
-            <p class="contact-header">Email</p>
-            <a
-              href="mailto:customerservice@astridlabua.com"
-              class="contact-detail"
-              >customerservice@astridlabua.com</a
-            >
+        <div class="footer-bottom-container">
+          <div class="index-footer-container index-footer-container-first">
+            <a href="about-us.html" class="index-footer">About Us</a>
           </div>
-          <div class="contact-detail-container">
-            <p class="contact-header">Phone</p>
-            <a href="tel:+66980589055" class="contact-detail"
-              >(+66)98-058-9055</a
-            >
+          <div class="index-footer-container">
+            <a href="products.html" class="index-footer">Products</a>
           </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom-container">
-        <div class="index-footer-container index-footer-container-first">
-          <a href="about-us.html" class="index-footer">About Us</a>
-        </div>
-        <div class="index-footer-container">
-          <a href="products.html" class="index-footer">Products</a>
-        </div>
-        <div class="index-footer-container">
-          <a href="news&updates.html" class="index-footer">News & Updates</a>
-        </div>
-        <div class="index-footer-container">
-          <a href="contactus.html" class="index-footer">Contact Us</a>
+          <div class="index-footer-container">
+            <a href="news&updates.html" class="index-footer">News & Updates</a>
+          </div>
+          <div class="index-footer-container">
+            <a href="contactus.html" class="index-footer">Contact Us</a>
+          </div>
         </div>
       </div>
       <div class="copyright-container">

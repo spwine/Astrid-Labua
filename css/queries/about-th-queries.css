@@ -1,14 +1,27 @@
 @media (min-width: 64em) {
   .about-bg {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .about-bg-desktop {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+
     width: 100%;
-    height: unset;
-    top: -40rem;
   }
 
   .about-header-container {
     display: none;
     opacity: 0;
     visibility: hidden;
+  }
+
+  .outer-bg {
+    background-color: #e2e2e2;
+    width: 100%;
   }
 
   .about-content-container {
@@ -67,5 +80,23 @@
 
   .txt-container {
     align-self: end;
+  }
+}
+
+@media (min-width: 90em) {
+  .img-container {
+    height: 48rem;
+  }
+
+  .content-header {
+    padding-bottom: 1.6rem;
+  }
+
+  .vision-content {
+    max-width: 56rem;
+  }
+
+  .content {
+    font-size: 1.6rem;
   }
 }

@@ -1,0 +1,51 @@
+@media (min-width: 64em) {
+  .main-content {
+    margin-top: 20rem;
+    padding: 0 4.8rem 9.6rem 4.8rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.8rem;
+    max-width: 144rem;
+  }
+
+  .contact-txt-container-outer {
+    align-self: start;
+  }
+
+  .contact-page-header {
+    margin-top: 0;
+    font-size: 6.4rem;
+    line-height: 6.4rem; /* 101.563% */
+    letter-spacing: -2px;
+
+    max-width: 44rem;
+  }
+
+  .contact-txt-container {
+    max-width: 44rem;
+  }
+
+  label {
+    font-size: 1.6rem;
+  }
+
+  .map-container {
+    margin: 0 4.8rem 12rem 4.8rem;
+    width: unset;
+    height: 60rem;
+    max-width: 144rem;
+  }
+}
+
+@media (min-width: 90em) {
+  .main-content,
+  .map-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .map-container {
+    height: 80rem;
+  }
+}

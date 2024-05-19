@@ -280,4 +280,8 @@
     font-size: 2rem;
     line-height: 3.2rem;
   }
+
+  .our-products-btn-desktop {
+    width: fit-content;
+  }
 }
