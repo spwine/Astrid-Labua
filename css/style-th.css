@@ -145,7 +145,7 @@ p {
   top: 0;
 }
 .btn-border:hover,
-.btn-border:active {
+.btn-border:visited {
   color: #fff;
   border-color: #6fb85e;
 }
@@ -157,7 +157,7 @@ p {
 }
 
 .btn-fill:hover,
-.btn-fill:active {
+.btn-fill:visited {
   color: #fff;
   background: #306da6;
 }
