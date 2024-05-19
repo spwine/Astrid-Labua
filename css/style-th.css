@@ -141,23 +141,10 @@ p {
   transition: top 0.5s ease-out;
 }
 
-.btn-border:hover::before {
-  top: 0;
-}
-.btn-border:hover {
-  color: #fff;
-  border-color: #6fb85e;
-}
-
 /* BTN Fill */
 
 .btn-fill {
   background: #f2f2f2;
-}
-
-.btn-fill:hover {
-  color: #fff;
-  background: #306da6;
 }
 
 .img-landing-container {

@@ -10,6 +10,19 @@
     max-width: 144rem;
     margin: 0 auto;
   }
+
+  .btn-border:hover::before {
+    top: 0;
+  }
+  .btn-border:hover {
+    color: #fff;
+    border-color: #6fb85e;
+  }
+
+  .btn-fill:hover {
+    color: #fff;
+    background: #306da6;
+  }
   /******** Hero Section *************/
   .hero-main-container {
     margin: 0;
