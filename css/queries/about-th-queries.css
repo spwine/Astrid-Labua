@@ -19,9 +19,16 @@
   }
 
   .about-header-container {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
+    position: fixed;
+    top: 55%;
+    left: 75%;
+
+    transform: rotate(-90deg);
+  }
+
+  .about-header {
+    color: #fff;
+    font-size: 9.6rem;
   }
 
   .outer-bg {
@@ -60,6 +67,7 @@
     font-style: normal;
     font-weight: 300;
     text-align: center;
+    letter-spacing: -2px;
   }
   .top-header-desktop span:first-child {
     font-size: 4rem;
@@ -103,5 +111,17 @@
 
   .content {
     font-size: 1.6rem;
+  }
+
+  .about-header-container {
+    top: 55%;
+    left: 75%;
+
+    transform: rotate(-90deg);
+  }
+
+  .about-header {
+    color: #fff;
+    font-size: 1400%;
   }
 }

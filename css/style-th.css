@@ -18,6 +18,7 @@ p {
 .products-section,
 .news-updates-section {
   background-color: #e2e2e2;
+  z-index: 9;
 }
 
 .headline-container {
@@ -56,6 +57,13 @@ p {
   /* bottom: 18rem; */
   position: relative;
   overflow-y: hidden;
+}
+
+.hero-bg-desktop,
+.hero-txt-bg-desktop-container {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .hero-main-container {

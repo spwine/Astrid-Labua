@@ -24,6 +24,79 @@
     background: #306da6;
   }
   /******** Hero Section *************/
+
+  .hero-bg {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .hero-bg-container {
+    height: 100vh;
+  }
+
+  .hero-bg-desktop {
+    display: unset;
+    visibility: visible;
+    opacity: 1;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .hero-txt-bg-desktop-container {
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    opacity: 1;
+    /* z-index: 1; */
+    position: fixed;
+    top: 60vh;
+    left: 50vw;
+    transform: translateX(-50%);
+  }
+
+  .hero-txt-bg-desktop-container span {
+    font-size: 6.4rem;
+    text-align: center;
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    color: #0d0d0d;
+  }
+
+  .text-slide {
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide-up 1.6s ease forwards;
+    animation-delay: var(--delay);
+    animation-timing-function: cubic-bezier(0.41, 0.01, 0, 1);
+  }
+
+  .text-slide:nth-child(1) {
+    --delay: 0s;
+  }
+
+  .text-slide:nth-child(2) {
+    --delay: 0.2s;
+  }
+
+  .text-slide:nth-child(3) {
+    --delay: 0.4s;
+  }
+
+  @keyframes slide-up {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .hero-main-container {
     margin: 0;
     align-self: center;
@@ -263,6 +336,10 @@
   .hero-header {
     line-height: 8rem;
     padding-bottom: 2.4rem;
+  }
+
+  .hero-txt-bg-desktop-container span {
+    font-size: 9.6rem;
   }
 
   .hero-txt {
