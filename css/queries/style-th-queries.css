@@ -54,7 +54,7 @@
     opacity: 1;
     /* z-index: 1; */
     position: fixed;
-    top: 60vh;
+    bottom: 7.2rem;
     left: 50vw;
     transform: translateX(-50%);
   }
@@ -163,6 +163,7 @@
 
   .btn-about {
     margin-top: 3.2rem;
+    width: 14.4rem;
   }
 
   .about-txt-btn {
@@ -359,7 +360,7 @@
 
   .aboutus-first-txt {
     font-size: 2rem;
-    max-width: 68rem;
+    max-width: 72rem;
     line-height: 3.2rem;
   }
 

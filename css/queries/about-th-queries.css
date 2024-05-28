@@ -81,7 +81,7 @@
   .first-para {
     font-size: 1.6rem;
     line-height: 3.2rem;
-    max-width: 46.4rem;
+    max-width: 42rem;
   }
 
   .para-img-container,
@@ -93,6 +93,11 @@
 
   .txt-container {
     align-self: end;
+  }
+
+  .vision-content,
+  .mission-content {
+    max-width: 42rem;
   }
 }
 
@@ -109,12 +114,20 @@
     max-width: 56rem;
   }
 
+  .mission-content {
+    max-width: 54rem;
+  }
+
+  .standard-content {
+    max-width: 60rem;
+  }
+
   .content {
     font-size: 1.6rem;
   }
 
   .about-header-container {
-    top: 55%;
+    top: 46%;
     left: 75%;
 
     transform: rotate(-90deg);
@@ -122,6 +135,10 @@
 
   .about-header {
     color: #fff;
-    font-size: 1400%;
+    font-size: 8.8vw;
+  }
+
+  .first-para {
+    max-width: 46.8rem;
   }
 }

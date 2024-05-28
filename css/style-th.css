@@ -1,15 +1,15 @@
 p {
   color: #000;
-  font-family: "Sukhumvit Set";
+  font-family: "Noto Sans Thai", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 24px; /* 150% */
 }
 
 .btn,
 .btn p {
-  font-family: "Sukhumvit Set";
+  font-family: "Noto Sans Thai", sans-serif;
   text-decoration: none;
 }
 
@@ -360,7 +360,6 @@ p {
 .product-txt-th {
   font-size: 1.2rem;
   font-style: normal;
-  font-weight: 300;
   line-height: 2rem;
 }
 
