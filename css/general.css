@@ -209,7 +209,7 @@ nav.nav-menu-active {
 
 .nav-lists li a span:last-child {
   color: #000;
-  font-family: "Sukhumvit Set";
+  font-family: "Noto Sans Thai", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 300;
