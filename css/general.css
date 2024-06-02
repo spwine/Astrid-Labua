@@ -270,6 +270,7 @@ nav.nav-menu-active {
   font-weight: 400;
   line-height: 150%; /* 18px */
   text-decoration: none;
+  color: #667085;
 }
 
 .bread-current {
