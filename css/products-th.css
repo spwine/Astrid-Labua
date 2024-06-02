@@ -104,3 +104,96 @@
 .baby-mois {
   max-width: 13.6rem;
 }
+
+/* Each Product Page */
+.each-product-img-container {
+  width: 100vw;
+  height: 42rem;
+}
+
+.each-product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bread-container-each-product {
+  margin-top: 2rem;
+}
+
+.main-content-each-container {
+  margin: 3.2rem auto 5.6rem auto;
+  padding: 0 2.4rem;
+  max-width: 43.2rem;
+}
+
+.each-product-header-each-container {
+  margin-bottom: 3.6rem;
+}
+
+.each-product-header-each {
+  font-size: 3.6rem;
+}
+
+.each-product-header-each-th {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-size: 2rem;
+}
+
+.tab-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.tab-header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tab-link {
+  background-color: rgba(242, 242, 242, 0.6);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px 4px 0px 0px;
+  transition: background-color 0.3s;
+
+  color: #2f539a;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6rem; /* 133.333% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.tab-link:hover {
+  background-color: #ddd;
+}
+
+.tab-link.active {
+  background-color: #f2f2f2;
+}
+
+.tab-content {
+  display: none;
+  padding: 3.2rem 1.6rem;
+  border-top: none;
+
+  border-radius: 0px 4px 4px 4px;
+  background: #f2f2f2;
+}
+
+.tab-content p {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+.tab-content.active {
+  display: block;
+}
