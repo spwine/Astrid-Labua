@@ -1,0 +1,148 @@
+@media (min-width: 64em) {
+  .bread-container {
+    margin-top: 12rem;
+    margin-left: 4.8rem;
+  }
+
+  .main-content-container {
+    padding: 2rem 4.8rem 18.4rem 4.8rem;
+  }
+
+  .products-header,
+  .each-products-header {
+    font-size: 6.4rem;
+  }
+
+  .each-product-header-th {
+    font-size: 2rem;
+    padding-top: 0.8rem;
+  }
+
+  .products-container-wrap {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+    column-gap: 2rem;
+    max-width: none;
+    height: 32rem;
+  }
+
+  .product-txt {
+    padding-left: 2rem;
+  }
+
+  .product-img-container {
+    height: 22rem;
+  }
+
+  .product-cat {
+    font-size: 2rem;
+  }
+
+  .product-cat-th,
+  .more {
+    font-size: 1.2rem;
+  }
+
+  .more {
+    padding-top: 1.2rem;
+  }
+
+  /* each */
+  .each-products-container-wrap {
+    grid-template-columns: repeat(3, 22rem);
+    column-gap: 2rem;
+    grid-template-rows: none;
+    max-width: 144rem;
+    justify-content: flex-start;
+    height: 36rem;
+  }
+
+  .baby-gen,
+  .baby-oil,
+  .baby-mois {
+    max-width: none;
+  }
+
+  .baby-oil {
+    height: 5.5rem;
+  }
+
+  .each-product-img-container {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .main-content-each-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 102.4rem;
+    column-gap: 4.4rem;
+    padding: 0 4.8rem;
+    margin-top: 8rem;
+    margin-bottom: 20rem;
+  }
+
+  .each-product-img-container-desktop {
+    display: unset;
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    width: 100%;
+  }
+
+  .each-product-img {
+    height: 44.4rem;
+    position: sticky;
+    top: 0%;
+  }
+
+  .each-product-header-each {
+    font-size: 4.8rem;
+  }
+}
+
+@media (min-width: 90em) {
+  .bread-container {
+    max-width: 144rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4.8rem;
+  }
+  .main-content-container {
+    max-width: 144rem;
+    margin: 0 auto;
+  }
+
+  .products-container-wrap {
+    height: 44rem;
+  }
+
+  .product-img-container {
+    height: 28rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .product-cat {
+    font-size: 2.8rem;
+  }
+
+  .product-cat-th,
+  .more {
+    font-size: 1.6rem;
+  }
+
+  .more {
+    padding-top: 2.4rem;
+  }
+
+  /* each */
+  .each-products-container-wrap {
+    grid-template-columns: repeat(3, 28rem);
+    height: 46rem;
+  }
+
+  .baby-oil {
+    height: 7.7rem;
+  }
+}

@@ -197,3 +197,9 @@
 .tab-content.active {
   display: block;
 }
+
+.each-product-img-container-desktop {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
