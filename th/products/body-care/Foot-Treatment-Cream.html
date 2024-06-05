@@ -14,17 +14,20 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../../css/general.css" />
-    <link rel="stylesheet" href="../../css/products-th.css" />
-    <link rel="stylesheet" href="../../css//queries/products-th-queries.css" />
-    <link rel="stylesheet" href="../../css/queries/general-queries.css" />
-    <title>Special Products</title>
+    <link rel="stylesheet" href="../../../css/general.css" />
+    <link rel="stylesheet" href="../../../css/products-th.css" />
+    <link
+      rel="stylesheet"
+      href="../../../css//queries/products-th-queries.css"
+    />
+    <link rel="stylesheet" href="../../../css/queries/general-queries.css" />
+    <title>Foot Treatment Cream</title>
   </head>
   <body>
     <header>
       <div class="container-nav">
         <a
-          href="../index.html"
+          href="../../index.html"
           class="header-logo"
           aria-label="Go to Home page"
         >
@@ -41,26 +44,28 @@
         <nav>
           <ul class="nav-lists">
             <li>
-              <a href="../index.html"><span>Home</span><span>หน้าหลัก</span></a>
+              <a href="../../index.html"
+                ><span>Home</span><span>หน้าหลัก</span></a
+              >
             </li>
             <li>
-              <a href="../about-us.html"
+              <a href="../../about-us.html"
                 ><span>About us</span><span>เกี่ยวกับเรา</span></a
               >
             </li>
             <li>
-              <a href="../products.html"
+              <a href="../../products.html"
                 ><span class="page-active">Products</span
                 ><span>ผลิตภัณฑ์</span></a
               >
             </li>
             <li>
-              <a href="../news&updates.html"
+              <a href="../../news&updates.html"
                 ><span>News & Updates</span><span>ข่าวสารและอัพเดท</span></a
               >
             </li>
             <li>
-              <a href="../contactus.html"
+              <a href="../../contactus.html"
                 ><span>Contact us</span><span>ช่องทางการติดต่อ</span></a
               >
             </li>
@@ -78,8 +83,16 @@
       </div>
     </header>
 
-    <div class="bread-container">
-      <a href="../index.html">
+    <div class="each-product-img-container">
+      <img
+        class="each-product-img"
+        src="https://ik.imagekit.io/samhee/Astrid%20Labua/products/Special%20Products/Astrid%20Labus_Ingredient%20Pic-02.jpg?updatedAt=1717297582148"
+        alt="Foot Treatment Cream"
+      />
+    </div>
+
+    <div class="bread-container bread-container-each-product">
+      <a href="../../index.html">
         <img
           class="home-icon"
           src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/home.svg?updatedAt=1714991386283"
@@ -91,80 +104,74 @@
         src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Vector.svg?updatedAt=1714991386223"
         alt="arrow-icon"
       />
-      <a href="../products.html" class="bread-txt">All Products</a>
+      <a href="../../products.html" class="bread-txt">...</a>
+
       <img
         class="arrow-icon"
         src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Vector.svg?updatedAt=1714991386223"
         alt="arrow-icon"
       />
-      <a href="special-products.html" class="bread-txt bread-current"
-        >Special Products</a
+      <a href="../body-care.html" class="bread-txt">Body Care</a>
+      <img
+        class="arrow-icon"
+        src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Vector.svg?updatedAt=1714991386223"
+        alt="arrow-icon"
+      />
+      <a href="Foot-Treatment-Cream.html" class="bread-txt bread-current"
+        >Foot Treatment Cream</a
       >
     </div>
 
-    <div class="main-content-container">
-      <div class="header-each-products-container">
-        <h2 class="each-products-header">Special Products</h2>
-        <h2 class="each-product-header-th">ผลิตภัณฑ์เฉพาะกลุ่ม</h2>
+    <div class="main-content-each-container">
+      <div class="each-product-img-container-desktop">
+        <img
+          class="each-product-img"
+          src="https://ik.imagekit.io/samhee/Astrid%20Labua/products/Special%20Products/Astrid%20Labus_Ingredient%20Pic-02.jpg?updatedAt=1717297582148"
+          alt="Foot Treatment Cream"
+        />
       </div>
+      <div>
+        <div class="each-product-header-each-container">
+          <h2 class="each-product-header-each">Foot Treatment Cream</h2>
+          <h2 class="each-product-header-each-th">ฟุตครีมทรีทเม้นท์</h2>
+        </div>
 
-      <div class="each-products-container-wrap">
-        <a
-          href="special-products/baby-gentle-shampoo.html"
-          class="product-container"
-        >
-          <div class="product-img-container">
-            <img
-              class="product-img"
-              src="https://ik.imagekit.io/samhee/Astrid%20Labua/products/Special%20Products/Astrid%20Labus_Ingredient%20Pic-01.jpg?updatedAt=1717297582065"
-              alt="Special Product"
-            />
+        <tab-controller class="tab-container">
+          <div class="tab-header">
+            <button class="tab-link active" onclick="openTab(event, 'Tab1')">
+              Description
+            </button>
+            <button class="tab-link" onclick="openTab(event, 'Tab2')">
+              Active ingredients
+            </button>
           </div>
-          <div class="product-txt">
-            <p class="product-cat baby-gen">Baby Gentle Shampoo</p>
-            <p class="product-cat-th">เบบี้ เจนเทิล แชมพู</p>
-
-            <p class="more">More details +</p>
+          <div id="Tab1" class="tab-content active">
+            <p>
+              ครีมบำรุงเท้าเนื้อครีมพิเศษเนียนนุ่มซึมซาบเร็ว ไม่เหนียวเหนอะหนะ
+              ช่วยให้ผิวฝ่าเท้าที่แห้งแตก หนาและแข็งกระด้างกลับ ชุ่มชื้น
+              เนียนนุ่ม
+              พร้อมป้องกันการแห้งแตกที่จะเกิดขึ้นใหม่ได้อย่างมีประสิทธิภาพ
+              ด้วยคุณสมบัติของ Cracked Heal Complex ที่รวมเอาสารสำคัญ
+              ที่มีคุณประโยชน์ต่อการดูแลผิวอันประกอบด้วย Compound moistiruzing
+              agent, Centella Asiatica Extract, Allantoin, สารประกอบยูเรีย
+              Hydroxyethyl Urea และวิตามินอี (Vitamin E)
+              ช่วยฟื้นฟูและเร่งการสร้างคอลลาเจนที่ผิวชั้นนอก
+              ให้มีความยืดหยุ่นมากขึ้นให้ริ้วรอยแตกหนาและร่องลึกตื้นขึ้นอย่างมีประสิทธิภาพ
+              ช่วยให้ความชุ่มชื้น รักษาสมดุลของน้ำหล่อเลี้ยงผิว
+              พร้อมปรับสภาพผิวให้นุ่มเรียบเนียนขึ้นจนสังเกตได้
+            </p>
           </div>
-        </a>
-
-        <a
-          href="special-products/Baby-Moisturizing-Body-Lotion.html"
-          class="product-container"
-        >
-          <div class="product-img-container">
-            <img
-              class="product-img"
-              src="https://ik.imagekit.io/samhee/Astrid%20Labua/products/Special%20Products/Astrid%20Labus_Ingredient%20Pic-02.jpg?updatedAt=1717297582148"
-              alt="Body Care"
-            />
+          <div id="Tab2" class="tab-content">
+            <p>
+              - Hydroxyethyl Urea<br />
+              - Shea Butter<br />
+              - Compound moistiruzing agent<br />
+              - Centella extract<br />
+              - Aloe vera extract<br />
+              - Vitamin E (Tocopheryl Acetate)
+            </p>
           </div>
-          <div class="product-txt">
-            <p class="product-cat baby-mois">Baby Moisturizing Body Lotion</p>
-            <p class="product-cat-th">เบบี้ มอยซ์เจอร์ไรซ์ซิ่ง บอดี้ โลชั่น</p>
-
-            <p class="more">More details +</p>
-          </div>
-        </a>
-
-        <a
-          href="special-products/Delicate-Baby-Oil.html"
-          class="product-container"
-        >
-          <div class="product-img-container">
-            <img
-              class="product-img"
-              src="https://ik.imagekit.io/samhee/Astrid%20Labua/products/Special%20Products/Astrid%20Labus_Ingredient%20Pic-03.jpg?updatedAt=1717297582209"
-              alt="Facial Care"
-            />
-          </div>
-          <div class="product-txt">
-            <p class="product-cat baby-oil">Delicate Baby Oil</p>
-            <p class="product-cat-th">ผลิตภัณฑ์สำหรับผิวกาย</p>
-
-            <p class="more">More details +</p>
-          </div>
-        </a>
+        </tab-controller>
       </div>
     </div>
 
@@ -251,6 +258,7 @@
         </p>
       </div>
     </footer>
-    <script defer src="../../js/script.js"></script>
+    <script defer src="../../../js/script.js"></script>
+    <script defer src="../../../js/script-tab.js"></script>
   </body>
 </html>

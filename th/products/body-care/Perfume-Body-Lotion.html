@@ -14,16 +14,23 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../css/general.css" />
-    <link rel="stylesheet" href="../css/products-th.css" />
-    <link rel="stylesheet" href="../css//queries/products-th-queries.css" />
-    <link rel="stylesheet" href="../css/queries/general-queries.css" />
-    <title>Astrid Labua</title>
+    <link rel="stylesheet" href="../../../css/general.css" />
+    <link rel="stylesheet" href="../../../css/products-th.css" />
+    <link
+      rel="stylesheet"
+      href="../../../css//queries/products-th-queries.css"
+    />
+    <link rel="stylesheet" href="../../../css/queries/general-queries.css" />
+    <title>Perfume Body Lotion</title>
   </head>
   <body>
     <header>
       <div class="container-nav">
-        <a href="index.html" class="header-logo" aria-label="Go to Home page">
+        <a
+          href="../../index.html"
+          class="header-logo"
+          aria-label="Go to Home page"
+        >
           <img
             src="https://ik.imagekit.io/samhee/Astrid%20Labua/Logo%202%20(1)%202.jpg?updatedAt=1714403506156"
             alt="Astrid Labua Logo"
@@ -37,26 +44,28 @@
         <nav>
           <ul class="nav-lists">
             <li>
-              <a href="index.html"><span>Home</span><span>หน้าหลัก</span></a>
+              <a href="../../index.html"
+                ><span>Home</span><span>หน้าหลัก</span></a
+              >
             </li>
             <li>
-              <a href="about-us.html"
+              <a href="../../about-us.html"
                 ><span>About us</span><span>เกี่ยวกับเรา</span></a
               >
             </li>
             <li>
-              <a href="products.html"
+              <a href="../../products.html"
                 ><span class="page-active">Products</span
                 ><span>ผลิตภัณฑ์</span></a
               >
             </li>
             <li>
-              <a href="news&updates.html"
+              <a href="../../news&updates.html"
                 ><span>News & Updates</span><span>ข่าวสารและอัพเดท</span></a
               >
             </li>
             <li>
-              <a href="contactus.html"
+              <a href="../../contactus.html"
                 ><span>Contact us</span><span>ช่องทางการติดต่อ</span></a
               >
             </li>
@@ -74,8 +83,16 @@
       </div>
     </header>
 
-    <div class="bread-container">
-      <a href="index.html">
+    <div class="each-product-img-container">
+      <img
+        class="each-product-img"
+        src="https://ik.imagekit.io/samhee/Astrid%20Labua/products/Special%20Products/Astrid%20Labus_Ingredient%20Pic-02.jpg?updatedAt=1717297582148"
+        alt="Perfume Body Lotion"
+      />
+    </div>
+
+    <div class="bread-container bread-container-each-product">
+      <a href="../../index.html">
         <img
           class="home-icon"
           src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/home.svg?updatedAt=1714991386283"
@@ -87,75 +104,68 @@
         src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Vector.svg?updatedAt=1714991386223"
         alt="arrow-icon"
       />
-      <a href="products.html" class="bread-txt bread-current">All Products</a>
+      <a href="../../products.html" class="bread-txt">...</a>
+
+      <img
+        class="arrow-icon"
+        src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Vector.svg?updatedAt=1714991386223"
+        alt="arrow-icon"
+      />
+      <a href="../body-care.html" class="bread-txt">Body Care</a>
+      <img
+        class="arrow-icon"
+        src="https://ik.imagekit.io/samhee/Astrid%20Labua/icon/Vector.svg?updatedAt=1714991386223"
+        alt="arrow-icon"
+      />
+      <a href="Perfume-Body-Lotion.html" class="bread-txt bread-current"
+        >Perfume Body Lotion</a
+      >
     </div>
 
-    <div class="main-content-container">
-      <h2 class="products-header">Explore Our Products</h2>
-      <div class="products-container-wrap">
-        <a href="products/special-products.html" class="product-container">
-          <div class="product-img-container">
-            <img
-              class="product-img"
-              src="https://ik.imagekit.io/samhee/Astrid%20Labua/products/Special.jpg?updatedAt=1714317458708"
-              alt="Special Product"
-            />
-          </div>
-          <div class="product-txt">
-            <p class="product-cat">Special Products</p>
-            <p class="product-cat-th">ผลิตภัณฑ์เฉพาะกลุ่ม</p>
+    <div class="main-content-each-container">
+      <div class="each-product-img-container-desktop">
+        <img
+          class="each-product-img"
+          src="https://ik.imagekit.io/samhee/Astrid%20Labua/products/Special%20Products/Astrid%20Labus_Ingredient%20Pic-02.jpg?updatedAt=1717297582148"
+          alt="Perfume Body Lotion"
+        />
+      </div>
+      <div>
+        <div class="each-product-header-each-container">
+          <h2 class="each-product-header-each">Perfume Body Lotion</h2>
+          <h2 class="each-product-header-each-th">เพอร์ฟูม บอดี้ โลชั่น</h2>
+        </div>
 
-            <p class="more">More details +</p>
+        <tab-controller class="tab-container">
+          <div class="tab-header">
+            <button class="tab-link active" onclick="openTab(event, 'Tab1')">
+              Description
+            </button>
+            <button class="tab-link" onclick="openTab(event, 'Tab2')">
+              Active ingredients
+            </button>
           </div>
-        </a>
-
-        <a href="products/body-care.html" class="product-container">
-          <div class="product-img-container">
-            <img
-              class="product-img"
-              src="https://ik.imagekit.io/samhee/Astrid%20Labua/products/body.jpg?updatedAt=1714317458756"
-              alt="Body Care"
-            />
+          <div id="Tab1" class="tab-content active">
+            <p>
+              สูตรถนอมผิวพร้อมความหอม ผสานคุณค่าบำรุงจาก Pink Flower extract และ
+              Vitamin B3 ช่วยให้ผิวกระจ่างใส Sodium Hyaluronate, Cucumber
+              extract ช่วยเพิ่มความชุ่มชื้น และความยืดหยุ่นกับผิว Vitamin E
+              ป้องกันอนุมูลอิสระ ช่วยไม่ให้ผิวถูกทำลาย ชะลอริ้วรอยก่อนวัย
+              ผสานคุณค่าของ Shea Butter บำรุงผิวที่แห้งเป็นพิเศษ ให้กลับชุ่มชื้น
+              มีสุขภาพดี เผยผิวสดใส เนียนนุ่มน่าสัมผัส
+            </p>
           </div>
-          <div class="product-txt">
-            <p class="product-cat">Body Care</p>
-            <p class="product-cat-th">ผลิตภัณฑ์สำหรับผิวกาย</p>
-
-            <p class="more">More details +</p>
+          <div id="Tab2" class="tab-content">
+            <p>
+              - Vitamin B3 (Nicotinamide)<br />
+              - Shea Butter<br />
+              - Cucumber Extract<br />
+              - Pink Flower extract<br />
+              - Sodium Hyaluronate<br />
+              - Vitamin E (Tocopheryl Acetate)
+            </p>
           </div>
-        </a>
-
-        <a href="#" class="product-container">
-          <div class="product-img-container">
-            <img
-              class="product-img"
-              src="https://ik.imagekit.io/samhee/Astrid%20Labua/products/face.jpg?updatedAt=1714317458827"
-              alt="Facial Care"
-            />
-          </div>
-          <div class="product-txt">
-            <p class="product-cat">Facial Care</p>
-            <p class="product-cat-th">ผลิตภัณฑ์สำหรับผิวหน้า</p>
-
-            <p class="more">More details +</p>
-          </div>
-        </a>
-
-        <a href="#" class="product-container">
-          <div class="product-img-container">
-            <img
-              class="product-img"
-              src="https://ik.imagekit.io/samhee/Astrid%20Labua/products/hair.jpg?updatedAt=1714317458807"
-              alt="Hair Products"
-            />
-          </div>
-          <div class="product-txt">
-            <p class="product-cat">Hair Products</p>
-            <p class="product-cat-th">ผลิตภัณฑ์สำหรับผม</p>
-
-            <p class="more">More details +</p>
-          </div>
-        </a>
+        </tab-controller>
       </div>
     </div>
 
@@ -220,16 +230,18 @@
 
         <div class="footer-bottom-container">
           <div class="index-footer-container index-footer-container-first">
-            <a href="about-us.html" class="index-footer">About Us</a>
+            <a href="../../about-us.html" class="index-footer">About Us</a>
           </div>
           <div class="index-footer-container">
-            <a href="products.html" class="index-footer">Products</a>
+            <a href="../../products.html" class="index-footer">Products</a>
           </div>
           <div class="index-footer-container">
-            <a href="news&updates.html" class="index-footer">News & Updates</a>
+            <a href="../../news&updates.html" class="index-footer"
+              >News & Updates</a
+            >
           </div>
           <div class="index-footer-container">
-            <a href="contactus.html" class="index-footer">Contact Us</a>
+            <a href="../../contactus.html" class="index-footer">Contact Us</a>
           </div>
         </div>
       </div>
@@ -240,6 +252,7 @@
         </p>
       </div>
     </footer>
-    <script defer src="../js/script.js"></script>
+    <script defer src="../../../js/script.js"></script>
+    <script defer src="../../../js/script-tab.js"></script>
   </body>
 </html>

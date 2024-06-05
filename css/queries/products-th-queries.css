@@ -49,12 +49,12 @@
 
   /* each */
   .each-products-container-wrap {
-    grid-template-columns: repeat(3, 22rem);
+    grid-template-columns: repeat(4, 22rem);
     column-gap: 2rem;
     grid-template-rows: none;
     max-width: 144rem;
     justify-content: flex-start;
-    height: 36rem;
+    grid-auto-rows: 36rem;
   }
 
   .baby-gen,
@@ -83,18 +83,24 @@
     margin-bottom: 20rem;
   }
 
+  .sticky {
+    position: relative;
+    height: auto;
+  }
+
   .each-product-img-container-desktop {
-    display: unset;
-    opacity: 1;
+    display: block;
     visibility: visible;
+    opacity: 1;
     height: 100%;
     width: 100%;
+    position: sticky;
+    top: 0%;
   }
 
   .each-product-img {
     height: 44.4rem;
-    position: sticky;
-    top: 0%;
+    width: 100%; /* Ensure the image fits its container */
   }
 
   .each-product-header-each {
@@ -138,8 +144,8 @@
 
   /* each */
   .each-products-container-wrap {
-    grid-template-columns: repeat(3, 28rem);
-    height: 46rem;
+    grid-template-columns: repeat(4, 28rem);
+    grid-auto-rows: 46rem;
   }
 
   .baby-oil {
