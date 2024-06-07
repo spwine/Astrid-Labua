@@ -87,7 +87,7 @@
 .each-products-container-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 25.2rem);
+  grid-auto-rows: 25.2rem;
   column-gap: 1.6rem;
   row-gap: 1.6rem;
 
@@ -199,6 +199,26 @@
 }
 
 .each-product-img-container-desktop {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Body Care */
+
+.one-row {
+  height: 4.4rem;
+}
+
+.width-144px {
+  max-width: 14rem;
+}
+
+.width-100px {
+  max-width: 10rem;
+}
+
+.coconut-gen-1440px {
   display: none;
   visibility: hidden;
   opacity: 0;

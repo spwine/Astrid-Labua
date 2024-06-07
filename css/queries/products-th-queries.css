@@ -106,6 +106,14 @@
   .each-product-header-each {
     font-size: 4.8rem;
   }
+
+  .one-row {
+    height: 5.5rem;
+  }
+
+  .width-144px {
+    max-width: 17.6rem;
+  }
 }
 
 @media (min-width: 90em) {
@@ -150,5 +158,29 @@
 
   .baby-oil {
     height: 7.7rem;
+  }
+
+  .one-row {
+    height: 7.7rem;
+  }
+
+  .width-144px {
+    max-width: 20rem;
+  }
+
+  .width-100px {
+    max-width: 16rem;
+  }
+
+  .coconut-gen-1440px {
+    display: unset;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .coconut-gen {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
   }
 }
