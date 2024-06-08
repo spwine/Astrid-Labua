@@ -111,6 +111,10 @@
     height: 5.5rem;
   }
 
+  .width-100px {
+    max-width: 12rem;
+  }
+
   .width-144px {
     max-width: 17.6rem;
   }
@@ -165,11 +169,11 @@
   }
 
   .width-144px {
-    max-width: 20rem;
+    max-width: 22rem;
   }
 
   .width-100px {
-    max-width: 16rem;
+    max-width: 18rem;
   }
 
   .coconut-gen-1440px {
