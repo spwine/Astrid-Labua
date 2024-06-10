@@ -20,6 +20,10 @@
   max-width: 44rem;
 }
 
+.products-container-wrap-en {
+  grid-template-rows: repeat(2, 22rem);
+}
+
 .product-container {
   height: 100%;
   width: 100%;

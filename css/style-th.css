@@ -217,6 +217,11 @@ p {
   margin-top: 2.4rem;
 }
 
+.btn-about-en {
+  width: 14rem;
+  padding: 14px 20px;
+}
+
 .btn-about:hover img {
   transform: translateX(50%);
   transition: all 0.5s ease-out;

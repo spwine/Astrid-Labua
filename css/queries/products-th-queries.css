@@ -26,6 +26,10 @@
     height: 32rem;
   }
 
+  .products-container-wrap-en {
+    height: 30rem;
+  }
+
   .product-txt {
     padding-left: 2rem;
   }
@@ -134,6 +138,10 @@
 
   .products-container-wrap {
     height: 44rem;
+  }
+
+  .products-container-wrap-en {
+    height: 40rem;
   }
 
   .product-img-container {
