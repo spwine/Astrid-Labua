@@ -166,6 +166,11 @@
     width: 14.4rem;
   }
 
+  .btn-about-en {
+    width: 18rem;
+    padding: 24px 20px;
+  }
+
   .about-txt-btn {
     font-size: 2rem;
   }
@@ -347,6 +352,10 @@
     font-size: 3.2rem;
     line-height: 4rem;
     max-width: 56rem;
+  }
+
+  .btn-about-en {
+    width: 20rem;
   }
 
   .aboutus-tagline-container span {
