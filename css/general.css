@@ -380,3 +380,16 @@ footer {
   color: #808080;
   font-size: 1.2rem;
 }
+
+/* Fade-in-up */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  /* Ensure the element is not visible until the animation is triggered */
+}
+
+.fade-in-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -44,3 +44,30 @@ document.addEventListener("DOMContentLoaded", function () {
     nav.classList.toggle("nav-menu-active");
   });
 });
+
+// Fade-in-up
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".fade-in-up");
+
+  function checkPosition() {
+    const windowHeight = window.innerHeight;
+
+    elements.forEach((element, index) => {
+      const positionFromTop = element.getBoundingClientRect().top;
+
+      if (positionFromTop <= windowHeight - 100) {
+        // Adjust the offset if needed
+        const delay = index * 0.08; // Delay each element by 0.2s
+        element.style.transitionDelay = `${delay}s`;
+        element.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkPosition);
+  window.addEventListener("resize", checkPosition);
+
+  // Initial check to see if any element is already in view
+  checkPosition();
+});
