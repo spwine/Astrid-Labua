@@ -50,16 +50,24 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(".fade-in-up");
 
+  // Activate the first four elements immediately
+  elements.forEach((element, index) => {
+    if (index < 4) {
+      element.classList.add("active");
+    }
+  });
+
   function checkPosition() {
     const windowHeight = window.innerHeight;
 
     elements.forEach((element, index) => {
       const positionFromTop = element.getBoundingClientRect().top;
 
-      if (positionFromTop <= windowHeight - 100) {
+      // Only apply the scroll check for elements after the first four
+      if (index >= 4 && positionFromTop <= windowHeight - 100) {
         // Adjust the offset if needed
-        // const delay = index * 0.08; // Delay each element by 0.2s
-        // element.style.transitionDelay = `${delay}s`;
+        const delay = index * 0.08; // Delay each element by 0.2s
+        element.style.transitionDelay = `${delay}s`;
         element.classList.add("active");
       }
     });
