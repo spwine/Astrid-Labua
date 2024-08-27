@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (positionFromTop <= windowHeight - 100) {
         // Adjust the offset if needed
-        const delay = index * 0.08; // Delay each element by 0.2s
-        element.style.transitionDelay = `${delay}s`;
+        // const delay = index * 0.08; // Delay each element by 0.2s
+        // element.style.transitionDelay = `${delay}s`;
         element.classList.add("active");
       }
     });
