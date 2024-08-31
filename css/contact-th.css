@@ -47,6 +47,7 @@ label {
 
 .input-container input,
 .input-container textarea {
+  font-family: "Manrope", sans-serif;
   width: 100%;
   padding: 10px;
   border: none;
