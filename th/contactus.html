@@ -20,7 +20,57 @@
     <link rel="stylesheet" href="../css/queries/contactus-th-queries.css" />
 
     <title>ติดต่อเรา | Astrid Labua</title>
+
+    <script>
+      function submitForm(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Disable the submit button to prevent multiple submissions
+        document.querySelector(".submit-btn").disabled = true;
+
+        // Validate the form fields before submission
+        var name = document.getElementById("full-name").value;
+        var company = document.getElementById("company").value;
+        var email = document.getElementById("email").value;
+        var telephone = document.getElementById("phone").value;
+        var comment = document.getElementById("message").value;
+
+        if (!name || !company || !email || !telephone || !comment) {
+          alert("Please fill in all the required fields.");
+          document.querySelector(".submit-btn").disabled = false;
+          return;
+        }
+
+        // Send the form data to the server using fetch or XMLHttpRequest
+        fetch("../submit.php", {
+          method: "POST",
+          body: new FormData(document.getElementById("myForm")),
+        })
+          .then((response) => response.text())
+          .then((data) => {
+            // Show the window popup with the response message
+            alert(data);
+
+            if (data.includes("Email sent successfully")) {
+              // Redirect back to the contact us page if the submission was successful
+              window.location.href = "contactus.html";
+            } else {
+              // Enable the submit button again in case of an error
+              document.querySelector(".submit-btn").disabled = false;
+            }
+          })
+          .catch((error) => {
+            console.error("Error submitting form:", error);
+            alert("Failed to send the email.");
+            // Enable the submit button again in case of error
+            document.querySelector(".submit-btn").disabled = false;
+          });
+      }
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
+
   <body class="container">
     <header>
       <div class="container-nav">
@@ -86,7 +136,12 @@
         </div>
       </div>
 
-      <form action="submit.php" method="post">
+      <form
+        id="myForm"
+        action="../submit.php"
+        method="post"
+        onsubmit="submitForm(event);"
+      >
         <div class="input-container">
           <label for="full-name">Full Name:</label>
           <input type="text" id="full-name" name="full-name" required />
@@ -97,17 +152,22 @@
         </div>
         <div class="input-container">
           <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone" />
+          <input type="tel" id="phone" name="phone" required />
         </div>
         <div class="input-container">
           <label for="company">Company Name:</label>
-          <input type="text" id="company" name="company" />
+          <input type="text" id="company" name="company" required />
         </div>
         <div class="input-container input-container-textarea">
           <label for="message">Your Message:</label>
           <textarea id="message" name="message" rows="4" required></textarea>
         </div>
-        <button class="submit-btn" type="submit">ส่งแบบฟอร์ม</button>
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LfrSjMqAAAAAKedGBaCyiQngMgt6D94OeXrDKpC"
+          style="margin-bottom: 2rem"
+        ></div>
+        <button class="submit-btn" type="submit">Submit</button>
       </form>
     </div>
     <div class="map-container">

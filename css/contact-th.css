@@ -86,6 +86,7 @@ label {
 }
 
 .submit-btn {
+  cursor: pointer;
   width: 12rem;
   height: 4.4rem;
   border-radius: 500px;
@@ -100,6 +101,11 @@ label {
   font-weight: 400;
   line-height: 1.4rem; /* 100% */
   text-transform: uppercase;
+  transition: all 0.2s ease-in;
+}
+
+.submit-btn:hover {
+  background: #6fb85e;
 }
 
 .map-container {
